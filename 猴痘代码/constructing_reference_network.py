@@ -7,6 +7,7 @@ import time
 from tqdm import tqdm
 
 
+# 运行该程序前先运行constructing_reference_network.py
 begin=time.strftime("%Y-%m-%d:%H-%M-%S",time.localtime(time.time()))
 
 normal={}
@@ -47,3 +48,4 @@ fw.close()
 
 print("Begin time is " + begin)
 print("End time is " + time.strftime("%Y-%m-%d:%H-%M-%S", time.localtime(time.time())))
+
