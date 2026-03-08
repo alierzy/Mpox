@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt  # 导入绘图库
 import pandas as pd  # 导入pandas库用于excel导出
 import pickle  # 导入pickle库用于数据保存
 
+# 运行该程序前先运行constructing_reference_network.py
+
 # 使用 Manager 创建一个全局共享字典
 def ssn_score(deta, pcc, nn):
     if pcc == 1:
@@ -263,3 +265,4 @@ if __name__ == "__main__":
             save_plot_data(sample_scores_dict, filename_prefix='l-DNB_Zambia')
 
             plt.show()  # 显示图表
+
